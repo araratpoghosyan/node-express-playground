@@ -1,7 +1,7 @@
 const express = require('express')
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('postgres://batman:wrong_secret@localhost:5432/myDB')
+const sequelize = new Sequelize('postgres://batman:secret@localhost:5432/myDB')
 const app = express()
 const port = 3000
 
