@@ -3,7 +3,7 @@ const { Sequelize } = require('sequelize');
 
 // Create database connection
 
-const sequelize = new Sequelize('postgres://batman:secret@localhost:5432/myDB')
+const sequelize = new Sequelize('postgres://batman:wrong_secret@localhost:5432/myDB')
 sequelize.authenticate().then(function(errors) { console.log(errors) });
 
 // Setup express application
