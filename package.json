@@ -1,0 +1,25 @@
+{
+  "name": "node-express-playground",
+  "version": "1.0.0",
+  "description": "Dummy project with NodeJS, Express and PostgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/araratpoghosyan/node-express-playground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/araratpoghosyan/node-express-playground/issues"
+  },
+  "homepage": "https://github.com/araratpoghosyan/node-express-playground#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.2.2",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.0"
+  }
+}
