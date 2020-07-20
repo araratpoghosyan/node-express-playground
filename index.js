@@ -1,7 +1,12 @@
 const express = require('express')
 const { Sequelize } = require('sequelize');
+require('dotenv').config()
 
-const sequelize = new Sequelize('postgres://batman:wrong_secret@localhost:5432/myDB')
+const dbName = process.env.DB_NAME
+const dbUser = process.env.DB_USER
+const dbPass = process.env.DB_PASS
+
+const sequelize = new Sequelize(`postgres://${dbUser}:${dbPass}@localhost:5432/${dbName}`)
 const app = express()
 const port = 3000
 
