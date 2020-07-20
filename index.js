@@ -6,14 +6,13 @@ const dbName = process.env.DB_NAME
 const dbUser = process.env.DB_USER
 const dbPass = process.env.DB_PASS
 
+let message = "All good!!!"
 const sequelize = new Sequelize(`postgres://${dbUser}:${dbPass}@localhost:5432/${dbName}`)
 const app = express()
 const port = 3000
 
 sequelize.authenticate()
-    .then(() => {
-        const message = "All good"
-    })
+    .then(() => {})
     .catch(function (errors) {
         message = "Error while connecting to database"
     });
